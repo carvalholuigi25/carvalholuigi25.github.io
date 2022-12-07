@@ -1,0 +1,287 @@
+* { word-wrap: break-word; word-break: break-all; white-space: normal; box-sizing: border-box; padding: 0; margin: 0; }
+html, body { scroll-behavior: smooth; }
+body {
+    position: relative;
+    background-color: greenyellow;
+    color: black;
+    word-wrap: break-word;
+    word-break: break-all; 
+    white-space: normal; 
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;
+}
+p, a, b, i, s, u, h1, h2, h3, h4, h5, h6, table {
+    margin: 0;
+}
+header, .header, #header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;;
+}
+footer, .footer, #footer {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2rem 15px;
+}
+.footer a[type=button] {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+.block, #block,
+.section, #section,
+.main, #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    text-align: center;
+    background-color: greenyellow;
+    color: black;
+    padding: 4rem 15px;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    border: 0;
+}
+.block p, #block p,
+.section p, #section p,
+.main p, #main p {
+    margin-top: 15px;
+}
+ul:not(.navbar), ol:not(.navbar), 
+ul:not(.navbar) li, ol:not(.navbar) li {
+    list-style-position: inside;
+    text-align: left;
+    padding: 0;
+    margin: 15px auto;
+}
+a {
+    text-decoration: none;
+    font-weight: normal;
+}
+a:not(.ico_link):hover, a:not(.ico_link):active, 
+a:not(.ico_link):visited, a:not(.ico_link):focus {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+form {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+}
+.form .form-group, #form .form-group,
+.form-group {
+    display: block;
+    margin: 15px auto;
+}
+.textjustify { text-align: justify; line-height: 2rem; }
+.textcenter { text-align: center; }
+.textleft { text-align: left; }
+.textright { text-align: right; }
+
+.card {
+    border-radius: 15px;   
+}
+
+a.ico_link {
+    margin-left: 5px;
+}
+
+.myprojects .row , .companies .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.myprojects .card .img-fluid, 
+.companies .card .img-fluid {
+    min-width: 100%;
+    min-height: 30vh;
+    object-fit: contain;
+    object-position: center center;
+}
+.btnmail {
+    display: block;
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid;
+    padding: 15px;
+}
+.form-control {
+    min-width: 100%;
+}
+.navbart {
+    background-color: rgb(192 192 192 / 70%) !important;
+}
+.navbar, .footer {
+    background-color: silver;
+}
+.navbar ul, .navbar ol {
+    margin: 0;
+}
+.navbar .navbar-brand img {
+    width: 100%;
+    height: 30px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.table, table {
+   border-color: black !important;
+   margin-bottom: 0 !important;   
+}
+
+.table th, .table td,
+table th, table td {
+  text-align: center;
+  vertical-align: middle;   
+}
+
+.card a:hover {
+    color: inherit !important;
+}
+
+.home {
+    background: transparent;
+}
+
+.bghome {
+    background: #afb10ab4 url("../images/background.webp") center center no-repeat fixed;
+    background-blend-mode: soft-light;
+    background-size: cover;
+}
+
+.uebyou .card {
+    background-color: #016a87;
+    color: white;
+}
+
+.domoweb .card {
+    background-color: white;
+    color: orange;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.curyear, #curyear { display: inline-block; }
+
+input[type=text]:read-only, input[type=text]:disabled, 
+input[type=text].readonly, input[type=text].disabled {
+    background-color: silver;
+    cursor: not-allowed;
+}
+
+.myskills, #myskills {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: calc(1200px - 600px);
+    overflow: auto;
+    margin: 15px auto;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 0;  
+}
+
+.pbar {
+   display: block;  
+   margin: 15px auto;
+}
+
+.subpbar {
+  display: flex !important;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: row;
+}
+
+.subpbar .title {
+  width: 20%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.subpbar .progress {
+  width: 80%;
+  text-align: left;
+}
+
+.pagination {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+}
+
+.pagination li, .pagination li a {
+  text-decoration: none !important;
+  margin: auto 0px !important;   
+}
+
+.pagination li a:hover, .pagination li a:visited,
+.pagination li a:active, .pagination li a:focus,
+.pagination li a:focus-within, .pagination li a:focus-visible,
+.pagination li a.active, .pagination .active, .active {
+   text-decoration: none !important;   
+}
+
+@media all and (min-width: 992px) {
+    ul:not(.navbar), ol:not(.navbar), 
+    ul:not(.navbar) li, ol:not(.navbar) li {
+        margin: 0;
+        text-align: inherit;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .card {
+        margin: 15px auto;
+    }
+    
+    .subpbar {
+       display: flex;
+       flex-direction: column !important;   
+    }
+    
+    .subpbar .title, .subpbar .progress {
+       width: 100%;
+       max-width: 100%;
+       text-align: center !important;
+    }
+    
+    .pagination li, .pagination li a {
+        margin: auto 0px !important;   
+    }
+    
+    .footer, #footer {
+        text-align: center;
+        margin: auto auto;
+    }
+
+    .footer ul, .footer ol, 
+    .footer ul li, .footer ol li {
+        text-align: center;
+    }
+}

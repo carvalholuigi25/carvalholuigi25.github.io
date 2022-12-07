@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luis Carvalho Personal Website</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/png">
+    <link rel="stylesheet" href="frameworks/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="frameworks/bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bghome" data-bs-spy="scroll" data-bs-target="#navbar-nav" data-bs-offset="50" data-bs-smooth-scroll="true">
+    <nav class="navbar navbart navbar-expand-md navbar-light bg-light fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+            <img src="images/logo_small.svg" alt="LCPW Logo" title="LCPW Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav me-0 ms-auto" id="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#allmyskills" class="nav-link">All My Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#myprojects" class="nav-link">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#companies" class="nav-link">Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+
+    <div class="section home" id="home">
+        <div class="container">
+            <img src="images/logo.svg" alt="LCPW Logo" title="LCPW Logo" class="img-fluid">
+            <h1 class="mt-3 title">Welcome!</h1>
+        </div>
+    </div>
+
+    <div class="section about" id="about">
+        <div class="container">
+            <h1>About</h1>
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/creator.png" alt="Luis Carvalho Main Photo" class="img-fluid avatar mt-3">
+                </div>
+                <div class="col-12">
+                    <p class="textjustify mt-3">
+                        Luis Carvalho is web programmer, software programmer, technician and specialist of IT since 2015.
+                    </p>
+                    <div class="textjustify d-block mt-3">
+                        <p>I'm graduated from:  </p>
+                        <ul>
+                            <li>
+                                <b>TGPSI (Técnico de Gestão e Programação de Sistemas Informáticos)</b> (from year 2011 to year 2014) from <b>Didáxis Vale São Cosme</b>;
+                            </li>
+                            <li>
+                                <b>CET IMRSI (Curso de Especialização e Tecnológica - Instalação e Manutenção de Redes e Sistemas Informáticos)</b> (from year 2014 to year 2015) from <b>Universidade Lusiada Vila Nova de Famalicão</b>.
+                            </li>
+                            <li>
+                                <b>EEI (Engenheira Eletrónica e Informática)</b> (from year 2015 to year 2020) from <b>Universidade Lusiada Vila Nova de Famalicão</b>.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <p class="textjustify mt-3">
+                This website is a personal and showcase of my projects related to softwares, websites, webapps and mobile apps to show and share everyone about my work which i've currently worked on or still currently working about it.
+            </p>
+        </div>
+    </div>
+    
+    <div class="section allmyskills" id="allmyskills">
+        <div class="container">
+            <h1>All My Skills</h1>
+            <div class="myskills" id="myskills"></div>
+            <div class="mypagination" id="mypagination"></div>
+        </div>
+    </div>
+
+    <div class="section myprojects" id="myprojects">
+        <div class="container">
+            <h1>My projects</h1>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <a href="https://github.com/carvalholuigi25/LCPBlog">
+                        <div class="card">
+                            <img src="images/myprojects/lcpblog.png" alt="LCP Blog" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <p>LCP Blog</p>      
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="https://github.com/carvalholuigi25/LCPSocialNetwork">
+                        <div class="card">
+                            <img src="images/myprojects/lcpsn.svg" alt="LCP Social Network" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <p>LCP Social Network</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="https://github.com/carvalholuigi25/lcpbot">
+                        <div class="card">
+                            <img src="images/myprojects/lcpbot.svg" alt="LCP Bot (for Discord)" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <p>LCP Bot (for Discord)</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <a href="https://github.com/carvalholuigi25?tab=repositories" class="btn btn-primary btnmoreprojects" target="_blank">
+                        <i class="bi bi-box-fill"></i>
+                        More projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section companies" id="companies">
+        <div class="container">
+            <h1>Companies</h1>
+            <div class="row">
+                <div class="col-12 col-md-4 uebyou">
+                    <a href="https://www.uebyou.pt/" target="_blank">
+                        <div class="card">
+                            <img src="https://www.uebyou.pt/wp-content/uploads/2019/08/Logotipo-Light.png" alt="Uebyou" title="Uebyou" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <p>Uebyou</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 domoweb">
+                    <a href="https://www.domoweb.pt/" target="_blank">
+                        <div class="card">
+                            <img src="https://www.domoweb.pt/images/logo/logo.png" alt="Domoweb" title="Domoweb" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <p>Domoweb</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section contact" id="contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <form action="https://lcpemailsender.000webhostapp.com/index.php" class="frmcontact" id="frmcontact" method="post">
+                <input type="hidden" name="to" id="to" class="to form-control" value="carvalholuigi25@gmail.com" readonly>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control firstname" placeholder="Write your first name here" required>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control lastname" placeholder="Write your last name here" required>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="from">Your Email</label>
+                    <input type="email" name="from" id="from" class="form-control from" placeholder="Write your email here" required>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" class="form-control subject" placeholder="Write your subject here" required>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="1" rows="5" class="form-control message" placeholder="Write your message here"></textarea>
+                </div>
+                <div class="form-group mt-3 ms-auto me-auto">
+                    <input type="reset" class="btn btn-secondary btnclear" value="Clear" />
+                    <input type="submit" class="btn btn-primary btnsend" name="send" value="Send" />
+                </div>
+            </form>
+        </div>
+        <p>Note: If the contact form isnt working, please <a href="mailto:carvalholuigi25@gmail.com">click this link</a> to send email of creator of this website. Thank you :)</p>
+    </div>
+
+    <footer class="footer copyright" id="footer">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-4">
+                    <h1>Links</h1>
+                    <ul class="mt-3">
+                        <li>
+                            <a href="index.html#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about">About</a>
+                        </li>
+                        <li>
+                            <a href="index.html#allmyskills">All My Skills</a>
+                        </li>
+                        <li>
+                            <a href="index.html#myprojects">My Projects</a>
+                        </li>
+                        <li>
+                            <a href="index.html#companies">Companies</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 ms-1">
+                    <h1>Contacts</h1>
+                    <div class="mt-3">
+                        <a href="mailto:luiscarvalho239@gmail.com" class="ico_link" target="_blank">
+                            <img src="https://raw.githubusercontent.com/carvalholuigi25/social-icons/master/SVG/Color/Gmail.svg" alt="Luigi Carvalho Gmail (Primary Email)" title="Luigi Carvalho Gmail (Primary Email)" width="50" height="50" class="img-fluid ico" />
+                        </a>
+                        <a href="mailto:carvalholuigi25@gmail.com" class="ico_link" target="_blank">
+                            <img src="https://raw.githubusercontent.com/carvalholuigi25/social-icons/master/SVG/Color/Gmail.svg" alt="Luigi Carvalho Gmail (Secondary Email)" title="Luigi Carvalho Gmail (Secondary Email)" width="50" height="50" class="img-fluid ico" />
+                        </a>
+                        <a href="https://github.com/carvalholuigi25" class="ico_link" target="_blank">
+                            <img src="https://raw.githubusercontent.com/carvalholuigi25/social-icons/master/SVG/Color/Github.svg" alt="Luigi Carvalho Github" title="Luigi Carvalho Github" width="50" height="50" class="img-fluid ico" />
+                        </a>
+                        <a href="https://www.facebook.com/luigicarvalho25" class="ico_link" target="_blank">
+                            <img src="https://raw.githubusercontent.com/carvalholuigi25/social-icons/master/SVG/Color/Facebook.svg" alt="Luigi Carvalho Facebook" title="Luigi Carvalho Facebook" width="50" height="50" class="img-fluid ico" />
+                        </a>
+                        <a href="https://www.instagram.com/luiscarvalhodev96" class="ico_link" target="_blank">
+                            <img src="https://raw.githubusercontent.com/carvalholuigi25/social-icons/master/SVG/Color/Instagram.svg" alt="Luigi Carvalho Instagram" title="Luigi Carvalho Instagram" width="50" height="50" class="img-fluid ico" />
+                        </a>
+                        <a href="https://twitter.com/carvalholuigi25" class="ico_link" target="_blank">
+                            <img src="https://raw.githubusercontent.com/carvalholuigi25/social-icons/master/SVG/Color/Twitter.svg" alt="Luigi Carvalho Twitter" title="Luigi Carvalho Twitter" width="50" height="50" class="img-fluid ico" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="textcenter">
+                        <div class="curyear" id="curyear"></div>
+                        <span>Created by <a href="mailto:luiscarvalho239@gmail.com" target="_blank">Luis Carvalho</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="frameworks/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

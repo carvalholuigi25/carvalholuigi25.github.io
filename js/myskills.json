@@ -1,0 +1,204 @@
+{
+  "myskills": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "value": 100
+    },
+    {
+      "id": 3,
+      "name": "Javascript",
+      "value": 100
+    },
+    {
+      "id": 4,
+      "name": "PHP",
+      "value": 100
+    },
+    {
+      "id": 5,
+      "name": "JQuery",
+      "value": 100
+    },
+    {
+      "id": 6,
+      "name": "XML",
+      "value": 100
+    },
+    {
+      "id": 7,
+      "name": "JSON",
+      "value": 100
+    },
+    {
+      "id": 8,
+      "name": "Angular",
+      "value": 100
+    },
+    {
+      "id": 9,
+      "name": "C#",
+      "value": 100
+    },
+    {
+      "id": 10,
+      "name": "ASP NET Core Web Api",
+      "value": 100
+    },
+    {
+      "id": 11,
+      "name": "Blazor Web Assembly",
+      "value": 100
+    },
+    {
+      "id": 12,
+      "name": "Blazor MAUI",
+      "value": 100
+    },
+    {
+      "id": 13,
+      "name": "ASP NET Core MVC",
+      "value": 100
+    },
+    {
+      "id": 14,
+      "name": "VB (Visual Basic)",
+      "value": 100
+    },
+    {
+      "id": 15,
+      "name": "VBA (Visual Basic for Applications)",
+      "value": 100
+    },
+    {
+      "id": 16,
+      "name": "SQL",
+      "value": 100
+    },
+    {
+      "id": 17,
+      "name": "MySQL",
+      "value": 100
+    },
+    {
+      "id": 18,
+      "name": "Python",
+      "value": 80
+    },
+    {
+      "id": 19,
+      "name": "React",
+      "value": 50
+    },
+    {
+      "id": 20,
+      "name": "Vue",
+      "value": 60
+    },
+    {
+      "id": 21,
+      "name": "MongoDB",
+      "value": 70
+    },
+    {
+      "id": 22,
+      "name": "Bash",
+      "value": 100
+    },
+    {
+      "id": 23,
+      "name": "Batch",
+      "value": 100
+    },
+    {
+      "id": 24,
+      "name": "Powershell",
+      "value": 65
+    },
+    {
+      "id": 25,
+      "name": "NodeJS",
+      "value": 100
+    },
+    {
+      "id": 26,
+      "name": "Nativescript",
+      "value": 100
+    },
+    {
+      "id": 27,
+      "name": "Typescript",
+      "value": 100
+    },
+    {
+      "id": 28,
+      "name": "SCSS, SASS and LESS",
+      "value": 100
+    },
+    {
+      "id": 29,
+      "name": "EJS",
+      "value": 100
+    },
+    {
+      "id": 30,
+      "name": "Visual Studio",
+      "value": 100
+    },
+    {
+      "id": 31,
+      "name": "Visual Studio Code",
+      "value": 100
+    },
+    {
+      "id": 32,
+      "name": "MS Office",
+      "value": 100
+    },
+    {
+      "id": 33,
+      "name": "Libreoffice",
+      "value": 100
+    },
+    {
+      "id": 34,
+      "name": "Github",
+      "value": 100
+    },
+    {
+      "id": 35,
+      "name": "Java",
+      "value": 80
+    },
+    {
+      "id": 36,
+      "name": "Eclipse IDE / Android Studio",
+      "value": 80
+    },
+    {
+      "id": 37,
+      "name": "Portuguese (Portugal)",
+      "value": 100
+    },
+    {
+      "id": 38,
+      "name": "English",
+      "value": 100
+    },
+    {
+      "id": 39,
+      "name": "French",
+      "value": 80
+    },
+    {
+      "id": 40,
+      "name": "Italian",
+      "value": 10
+    }
+  ]
+}

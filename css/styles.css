@@ -212,7 +212,7 @@ input[type=text].readonly, input[type=text].disabled {
     overflow: auto;
     margin: 15px auto;
     padding: 15px;
-    border: 1px solid;
+    border: 0;
     border-radius: 0;  
 }
 

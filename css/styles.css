@@ -145,8 +145,20 @@ a.ico_link {
 }
 
 .table, table {
+   background: transparent;
+   color: black;
    border-color: black !important;
    margin-bottom: 0 !important;   
+}
+
+.table th, table th {
+   background: orange;
+   color: black;
+}
+
+.table td, table td {
+   background: white;
+   color: black;
 }
 
 .table th, .table td,

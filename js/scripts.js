@@ -33,6 +33,111 @@ function getMyStatusBar(mydata, i) {
       return statusbar;
 }
 
+function getMySearchBar(enableFilter = true) {
+	if(enableFilter && document.querySelectorAll("#mysearchbar")[0]) {
+		document.querySelectorAll("#mysearchbar")[0].innerHTML = `
+		<form class="frmsrchdata" id="frmsrchdata" name="frmsrchdata" action="" method="get">
+			<div class="row">
+				<div class="form-group d-block col-12 col-md-4 col-lg-8 mt-3">
+					<label for="searchinp">Search</label>
+					<input type="text" class="form-control searchinp" id="searchinp" name="searchinp" value="" placeholder="Search here to see my skills data" />
+				</div>
+				<div class="form-group d-block col-12 col-md-4 col-lg-2 mt-3">
+					<label for="orderinp">Order</label>
+					<select name="orderinp" id="orderinp" class="form-control orderinp">
+						<option value="asc"  selected="selected">ASC</option>
+						<option value="desc">DESC</option>
+					</select>
+				</div>
+				<div class="form-group d-block col-12 col-md-4 col-lg-2 mt-3">
+					<label for="filterbynameinp">Filter by name</label>
+					<select name="filterbynameinp" id="filterbynameinp" class="form-control filterbynameinp">
+						<option value="id" selected="selected">Id</option>
+						<option value="name">Name</option>
+						<option value="value">Value</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group d-block col-12 mt-3">
+				<button type="reset" class="btn btn-secondary searchclear" id="searchclear" name="searchclear">
+					<i class="bi bi-x-circle-fill me-1"></i>
+					Reset
+				</button>
+				<button type="button" class="btn btn-primary searchsub ms-1" id="searchsub" name="searchsub">
+					<i class="bi bi-send-fill me-1"></i>
+					Submit
+				</button>
+			</div>
+		</form>`;
+
+		if(document.querySelector('#frmsrchdata')) {
+			document.querySelector('#frmsrchdata').onsubmit = function(e) {
+				e.preventDefault();
+			};
+
+			if(document.querySelector('#searchinp')) {
+				document.querySelector('#searchinp').oninput = function(e) {
+					e.preventDefault();
+				};
+			}
+
+			if(document.querySelector('#orderinp')) {
+				document.querySelector('#orderinp').onchange = function(e) {
+					e.preventDefault();
+					document.querySelector('#orderinp option').removeAttribute('selected');
+					document.querySelectorAll('#orderinp option[value="'+this.value+'"]')[0].setAttribute('selected', 'selected');
+				};
+			}
+
+			if(document.querySelector('#filterbynameinp')) {
+				document.querySelector('#filterbynameinp').onchange = function(e) {
+					e.preventDefault();
+					document.querySelector('#filterbynameinp option').removeAttribute('selected');
+					document.querySelectorAll('#filterbynameinp option[value="'+this.value+'"]')[0].setAttribute('selected', 'selected');
+				};
+			}
+
+			if(document.querySelector('#searchclear')) {
+				document.querySelector('#searchclear').onclick = function(e) {
+					e.preventDefault();
+				
+					document.querySelector('#searchinp').value = "";
+					document.querySelector('#orderinp option').removeAttribute('selected');
+					document.querySelectorAll('#orderinp option')[0].setAttribute('selected', 'selected');
+					document.querySelector('#filterbynameinp option').removeAttribute('selected');
+					document.querySelectorAll('#filterbynameinp option')[0].setAttribute('selected', 'selected');
+					
+					localStorage.setItem("searchObj",  JSON.stringify({
+						search: document.querySelectorAll('#searchinp')[0].value,
+						orderby: document.querySelectorAll('#orderinp option')[0].value,
+						filterby: document.querySelectorAll('#filterbynameinp option')[0].value
+					}));
+
+					console.log(localStorage.getItem("searchObj"));
+				};
+			}
+
+			if(document.querySelector('#searchsub')) {
+				document.querySelector('#searchsub').onclick = function(e) {
+					e.preventDefault();
+					var valsrchinp = document.querySelector('#searchinp').value;
+					var valfnameinp = document.querySelector('#filterbynameinp option[selected="selected"]').value;
+					var valorderbyinp = document.querySelector('#orderinp option[selected="selected"]').value;
+
+					var objsrch = {
+						search: valsrchinp,
+						orderby: valorderbyinp,
+						filterby: valfnameinp
+					};
+
+					localStorage.setItem("searchObj",  JSON.stringify(objsrch));
+					console.log(localStorage.getItem("searchObj"));
+				};
+			}
+		}
+	}
+}
+
 async function getMySkillsData() {
    if(document.querySelectorAll("#myskills")[0]) {
        var content = ""; var datacnt = ""; var statusbar = ""; var mydata = "";
@@ -383,6 +488,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     navClickLink();
+	getMySearchBar(false);
     await getMySkillsData();
 
     window.addEventListener('scroll', () => {

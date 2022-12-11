@@ -147,6 +147,8 @@ a.ico_link {
 .table, table {
    background: transparent;
    color: black;
+   white-space: pre-line;
+   overflow: auto;
    border-color: black !important;
    margin-bottom: 0 !important;   
 }

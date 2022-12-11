@@ -145,13 +145,14 @@ a.ico_link {
 }
 
 .table-responsive {
-   white-space: pre-line;
+   white-space: pre;
    overflow: hidden;
 }
 
 .table, table {
    background: transparent;
    color: black;
+   white-space: pre;
    overflow: auto;
    border-color: black !important;
    margin-bottom: 0 !important;   

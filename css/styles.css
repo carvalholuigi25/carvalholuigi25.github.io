@@ -176,7 +176,8 @@ table th, table td {
 }
 
 table td .progress, 
-table td .progress * {
+table td .progress *,
+table td * {
   font-size: 12px;
 }
 

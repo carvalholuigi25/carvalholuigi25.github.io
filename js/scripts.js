@@ -277,9 +277,8 @@ async function getMySkillsData() {
 			<div class="progress">
 				<div class="progress-bar progress-bar-striped progress-bar-animated ${statusbar}" role="progressbar" 
 				aria-label="${mydata[i].name}" aria-valuenow="${mydata[i].value}" aria-valuemin="0" aria-valuemax="100" 
-				style="width: ${mydata[i].value}%">
-				${mydata[i].value}%
-				</div>
+				style="width: ${mydata[i].value}%"></div>
+				<span class="legend-progress">${mydata[i].value}%</span>
 			</div>
 			</td>
 	       </tr>`;
@@ -289,11 +288,10 @@ async function getMySkillsData() {
 		 <div class="subpbar">
 		   <label class="title">${mydata[i].name} (Id: ${mydata[i].id})</label>
 		   <div class="progress">
-		      <div class="progress-bar progress-bar-striped progress-bar-animated ${statusbar}" role="progressbar" 
-			aria-label="${mydata[i].name}" aria-valuenow="${mydata[i].value}" aria-valuemin="0" aria-valuemax="100" 
-			style="width: ${mydata[i].value}%">
-			${mydata[i].value}%
-		      </div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated ${statusbar}" role="progressbar" 
+				aria-label="${mydata[i].name}" aria-valuenow="${mydata[i].value}" aria-valuemin="0" aria-valuemax="100" 
+				style="width: ${mydata[i].value}%"></div>
+				<span class="legend-progress">${mydata[i].value}%</span>
 		   </div>
 		 </div>
 	        </div>`;      
@@ -465,13 +463,12 @@ function doPagination(ary, len, page = 1) {
 			  <td>${ary[i].id}</td>
 			  <td>${ary[i].name}</td>
 			  <td>
-			   <div class="progress">
-				  <div class="progress-bar progress-bar-striped progress-bar-animated ${statusbar}" role="progressbar" 
-				aria-label="${ary[i].name}" aria-valuenow="${ary[i].value}" aria-valuemin="0" aria-valuemax="100" 
-				style="width: ${ary[i].value}%">
-				${ary[i].value}%
-				  </div>
-			   </div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated ${statusbar}" role="progressbar" 
+					aria-label="${ary[i].name}" aria-valuenow="${ary[i].value}" aria-valuemin="0" aria-valuemax="100" 
+					style="width: ${ary[i].value}%"></div>
+					<span class="legend-progress">${ary[i].value}%</span>
+			    </div>
 			  </td>
 			</tr>`;
 		}

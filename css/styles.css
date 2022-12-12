@@ -144,18 +144,52 @@ a.ico_link {
     max-height: 100%;
 }
 
+.progress {
+    --bs-progress-bg: #7b8fa3;
+    position: relative;
+}
+
+.legend-progress {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;;
+    color: white;
+}
+
 .table-responsive {
-   white-space: nowrap;
-   overflow: hidden;
+    display: block;
+    max-width: 100%;
+    overflow: auto;
+    white-space: normal;
+    font-size: 14px;
 }
 
 .table, table {
    background: transparent;
    color: black;
-   white-space: inherit;
    overflow: auto;
+   white-space: normal;
    border-color: black !important;
    margin-bottom: 0 !important;   
+}
+
+table *, .table * {
+    white-space: nowrap;
+}
+
+table > *, .table > * {
+    font-size: 14px;
+}
+
+table .progress, .table .progress,
+table .progress *, .table .progress * {
+    font-size: 12px !important;
 }
 
 .table th, table th {
@@ -172,13 +206,6 @@ a.ico_link {
 table th, table td {
   text-align: center;
   vertical-align: middle;  
-  font-size: 12px; 
-}
-
-table td .progress, 
-table td .progress *,
-table td * {
-  font-size: 12px;
 }
 
 .card a:hover {

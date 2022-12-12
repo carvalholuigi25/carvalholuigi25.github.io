@@ -54,7 +54,7 @@ function getMySearchBar(enableFilter = true) {
 					</select>
 				</div>
 				<div class="form-group d-block col-12 col-md-4 col-lg-2 mt-3">
-					<label for="filterbynameinp">Filter by name</label>
+					<label for="filterbynameinp">Filter by</label>
 					<select name="filterbynameinp" id="filterbynameinp" class="form-control filterbynameinp">
 						<option value="id" selected="selected">Id</option>
 						<option value="name">Name</option>
